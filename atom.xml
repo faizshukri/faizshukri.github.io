@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[note]]></title>
+  <link href="http://faizshukri.github.io/atom.xml" rel="self"/>
+  <link href="http://faizshukri.github.io/"/>
+  <updated>2013-12-09T13:50:21+08:00</updated>
+  <id>http://faizshukri.github.io/</id>
+  <author>
+    <name><![CDATA[Faiz Shukri]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Sublime Text 3 Keyboard Shortcuts for OSX]]></title>
+    <link href="http://faizshukri.github.io/blog/2013/12/09/sublime-text-3-keyboard-shortcuts-for-osx/"/>
+    <updated>2013-12-09T13:46:53+08:00</updated>
+    <id>http://faizshukri.github.io/blog/2013/12/09/sublime-text-3-keyboard-shortcuts-for-osx</id>
+    <content type="html"><![CDATA[<div><script src='https://gist.github.com/7867631.js'></script>
+<noscript><pre><code>h2. Keyboard Shortcuts for Sublime Text 3- OSX
+
+h3. Editing
+
+| Keypress | Command |
+| ⌘ + X | Delete line |
+| ⌘ + ↩ | Insert line after |
+| ⌘ + ⇧ + ↩ | Insert line before |
+| ⌘ + ⌃ + ↑ | Move line/selection up |
+| ⌘ + ⌃ + ↓ | Move line/selection down |
+| ⌘ + L | elect line - Repeat to select next lines |
+| ⌘ + D | Select word - Repeat select others occurrences |
+| ⌃ + M | Jump to closing parentheses Repeat to jump to opening parentheses |
+| ⌃ + ⇧ + M | Select all contents of the current parentheses |
+| ⌘ + K, ⌘ + K | Delete from cursor to end of line |
+| ⌘ + K + ⌫ | Delete from cursor to start of line |
+| ⌘ + ] | Indent current line(s) |
+| ⌘ + [ | Un-indent current line(s) |
+| ⌘ + ⇧ + D | Duplicate line(s) |
+| ⌘ + J | Join line below to the end of the current line |
+| ⌘ + / | Comment/un-comment current line |
+| ⌘ + ⌥ + / | Block comment current selection |
+| ⌘ + Y | Redo, or repeat last keyboard shortcut command |
+| ⌘ + ⇧ + V | Paste and indent correctly |
+| ⌃ + Space | Select next auto-complete suggestion |
+| ⌃ + U | Soft undo; jumps to your last change before undoing change when repeated |
+| ⌃ + ⇧ + Up | Column selection up |
+| ⌃ + ⇧ + Down | Column selection down |
+
+h3. Navigation/Goto Anywhere
+
+| Keypress | Command |
+| ⌘ + P | Quick-open files by name |
+| ⌘ + R | Goto symbol |
+|   | Goto word in current file |
+| ⌃ + G | Goto line in current file |
+
+h3. General
+
+| Keypress | Command |
+| ⌘ + ⇧ + P | Command prompt |
+| ⌘ + K, ⌘ + B | Toggle side bar |
+| ⌃ + ⇧ + P | Show scope in status bar |
+
+h3. Find/Replace
+
+| Keypress | Command |
+| ⌘ + F | Find |
+| ⌘ + ⌥ + F | Replace |
+| ⌘ + ⇧ + F | Find in files |
+
+h3. Tabs
+
+| Keypress | Command |
+| ⌘ + ⇧ + t | Open last closed tab |
+| ^ + Tab | Cycle up through tabs |
+| ⇧ + ^ + Tab | Cycle down through tabs |
+|    | Find in files |
+    
+h3. Split window
+
+| Keypress | Command |
+| ⌘ + ⌥ + 2 | Split view into two columns |
+| ⌘ + ⌥ + 1 | Revert view to single column |
+| ⌘ + ⌥ + 5 | Set view to grid (4 groups) |
+| ⌃ + [NUM] | Jump to group where num is 1-4 |
+| ⌃ + ⇧ + [NUM] | Move file to specified group where num is 1-4 |
+
+h3. Bookmarks
+
+| Keypress | Command |
+| ⌘ + F2 | Toggle bookmark |
+| F2    Next | bookmark |
+| ⇧ + F2 | Previous bookmark |
+| ⇧ + ⌘ + F2 | Clear bookmarks |
+
+h3. Text manipulation
+
+| Keypress | Command |
+| ⌘ + K, ⌘ + U | Transform to Uppercase |
+| ⌘ + K, ⌘ + L | Transform to Lowercase |</code></pre></noscript></div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Convert Gregorian Date to Hijri]]></title>
+    <link href="http://faizshukri.github.io/blog/2013/12/05/convert-gregorian-date-to-hijri/"/>
+    <updated>2013-12-05T23:02:06+08:00</updated>
+    <id>http://faizshukri.github.io/blog/2013/12/05/convert-gregorian-date-to-hijri</id>
+    <content type="html"><![CDATA[<div><script src='https://gist.github.com/7804628.js'></script>
+<noscript><pre><code>### Convert gregorian date to Hijri
+
+####How to use
+By default, we create the Hijri object with the current time
+```php
+$hijri = new HijriDate();
+```
+We can set a specific time in the constructor
+```php
+//passing time
+$hijri = new HijriDate( 580060800 );
+
+//or just
+$hijri = new HijriDate( strtotime(&#39;1998-05-20&#39;) );
+```
+Then we can retrieve the date with
+```php
+$hijri-&gt;get_date(); //3 Syawal 1408H
+```
+Should we want the specific information, we can retrieve it using
+```php
+$hijri-&gt;get_day(); //3
+$hijri-&gt;get_month(); //10
+$hijri-&gt;get_year(); //1408
+
+$hijri-&gt;get_month_name( 10 ); //syawal
+//or from the date given
+$hijri-&gt;get_month_name( $hijri-&gt;get_month() ); //syawal
+```
+####License
+&gt; Released under the MIT license
+
+####Credits to
+&gt; This code was the improved version created by me, and originally written by [amichauer at gmx dot de ¶](http://www.php.net/manual/en/ref.calendar.php#54234) guy at [PHP.NET](http://www.php.net)</code></pre></noscript></div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Convert Numbers to Malaysian or Indonesian Language]]></title>
+    <link href="http://faizshukri.github.io/blog/2013/12/05/Convert-numbers-to-Malaysian-or-Indonesian-Language/"/>
+    <updated>2013-12-05T22:50:58+08:00</updated>
+    <id>http://faizshukri.github.io/blog/2013/12/05/Convert-numbers-to-Malaysian-or-Indonesian-Language</id>
+    <content type="html"><![CDATA[<div><script src='https://gist.github.com/7802735.js'></script>
+<noscript><pre><code>### Convert numbers to Malay/Malaysia/Malaysian or Indonesia/Indonesian Language in PHP.
+
+How to use
+```php
+$number = new Eja_Nombor();
+$number-&gt;eja(1468); //seribu empat ratus enam puluh lapan
+```
+or even in comma separated string value
+```php
+$number-&gt;eja(&#39;458,139&#39;); //empat ratus lima puluh lapan ribu seratus tiga puluh sembilan
+```
+or event in float number
+```php
+$number-&gt;eja(&#39;12.34&#39;); //dua belas perpuluhan tiga empat
+```
+Test data was provided. You may run the test data by using [PHPUnit](http://phpunit.de/manual/3.7/en/index.html)
+```
+$ phpunit NumberConversionTest.php
+```
+
+Credit
+&gt; This code was the improved version created by me, and originally written by [Huda M Elmatsani](http://www.phpclasses.org/browse/file/7590.html)</code></pre></noscript></div>
+
+]]></content>
+  </entry>
+  
+</feed>

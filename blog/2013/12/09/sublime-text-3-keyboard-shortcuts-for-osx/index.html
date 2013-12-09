@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>note</title>
+  <title>Sublime Text 3 Keyboard Shortcuts for OSX - note</title>
   <meta name="author" content="Faiz Shukri">
 
   
@@ -20,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://faizshukri.github.io">
+  <link rel="canonical" href="http://faizshukri.github.io/blog/2013/12/09/sublime-text-3-keyboard-shortcuts-for-osx">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="note" type="application/atom+xml">
@@ -65,15 +65,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/12/09/sublime-text-3-keyboard-shortcuts-for-osx/">Sublime Text 3 Keyboard Shortcuts for OSX</a></h1>
+      <h1 class="entry-title">Sublime Text 3 Keyboard Shortcuts for OSX</h1>
     
     
       <p class="meta">
@@ -96,7 +93,7 @@
   </header>
 
 
-  <div class="entry-content"><div><script src='https://gist.github.com/7867631.js'></script>
+<div class="entry-content"><div><script src='https://gist.github.com/7867631.js'></script>
 <noscript><pre><code>h2. Keyboard Shortcuts for Sublime Text 3- OSX
 
 h3. Editing
@@ -180,93 +177,16 @@ h3. Text manipulation
 | ⌘ + K, ⌘ + L | Transform to Lowercase |</code></pre></noscript></div>
 
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/12/05/convert-gregorian-date-to-hijri/">Convert Gregorian Date to Hijri</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">Faiz Shukri</span></span>
 
-<time datetime="2013-12-05T23:02:06+08:00" pubdate data-updated="true">Dec 5<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><div><script src='https://gist.github.com/7804628.js'></script>
-<noscript><pre><code>### Convert gregorian date to Hijri
-
-####How to use
-By default, we create the Hijri object with the current time
-```php
-$hijri = new HijriDate();
-```
-We can set a specific time in the constructor
-```php
-//passing time
-$hijri = new HijriDate( 580060800 );
-
-//or just
-$hijri = new HijriDate( strtotime(&#39;1998-05-20&#39;) );
-```
-Then we can retrieve the date with
-```php
-$hijri-&gt;get_date(); //3 Syawal 1408H
-```
-Should we want the specific information, we can retrieve it using
-```php
-$hijri-&gt;get_day(); //3
-$hijri-&gt;get_month(); //10
-$hijri-&gt;get_year(); //1408
-
-$hijri-&gt;get_month_name( 10 ); //syawal
-//or from the date given
-$hijri-&gt;get_month_name( $hijri-&gt;get_month() ); //syawal
-```
-####License
-&gt; Released under the MIT license
-
-####Credits to
-&gt; This code was the improved version created by me, and originally written by [amichauer at gmx dot de ¶](http://www.php.net/manual/en/ref.calendar.php#54234) guy at [PHP.NET](http://www.php.net)</code></pre></noscript></div>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/12/05/Convert-numbers-to-Malaysian-or-Indonesian-Language/">Convert Numbers to Malaysian or Indonesian Language</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -278,50 +198,38 @@ $hijri-&gt;get_month_name( $hijri-&gt;get_month() ); //syawal
   
 
 
-<time datetime="2013-12-05T22:50:58+08:00" pubdate data-updated="true">Dec 5<span>th</span>, 2013</time>
-        
-      </p>
+<time datetime="2013-12-09T13:46:53+08:00" pubdate data-updated="true">Dec 9<span>th</span>, 2013</time>
+      
+
+
+    </p>
     
-  </header>
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://faizshukri.github.io/blog/2013/12/09/sublime-text-3-keyboard-shortcuts-for-osx/" data-via="faizshudin" data-counturl="http://faizshukri.github.io/blog/2013/12/09/sublime-text-3-keyboard-shortcuts-for-osx/" >Tweet</a>
+  
+  
+  
+</div>
 
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/12/05/convert-gregorian-date-to-hijri/" title="Previous Post: Convert gregorian date to Hijri">&laquo; Convert gregorian date to Hijri</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
-  <div class="entry-content"><div><script src='https://gist.github.com/7802735.js'></script>
-<noscript><pre><code>### Convert numbers to Malay/Malaysia/Malaysian or Indonesia/Indonesian Language in PHP.
-
-How to use
-```php
-$number = new Eja_Nombor();
-$number-&gt;eja(1468); //seribu empat ratus enam puluh lapan
-```
-or even in comma separated string value
-```php
-$number-&gt;eja(&#39;458,139&#39;); //empat ratus lima puluh lapan ribu seratus tiga puluh sembilan
-```
-or event in float number
-```php
-$number-&gt;eja(&#39;12.34&#39;); //dua belas perpuluhan tiga empat
-```
-Test data was provided. You may run the test data by using [PHPUnit](http://phpunit.de/manual/3.7/en/index.html)
-```
-$ phpunit NumberConversionTest.php
-```
-
-Credit
-&gt; This code was the improved version created by me, and originally written by [Huda M Elmatsani](http://www.phpclasses.org/browse/file/7590.html)</code></pre></noscript></div>
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
-  
-  
 
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <section>
@@ -346,7 +254,7 @@ Credit
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/faizshukri">@faizshukri</a> on GitHub
@@ -379,6 +287,7 @@ Credit
   
 </aside>
 
+
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -392,7 +301,10 @@ Credit
       var disqus_shortname = 'faizshukrigithubio';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://faizshukri.github.io/blog/2013/12/09/sublime-text-3-keyboard-shortcuts-for-osx/';
+        var disqus_url = 'http://faizshukri.github.io/blog/2013/12/09/sublime-text-3-keyboard-shortcuts-for-osx/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

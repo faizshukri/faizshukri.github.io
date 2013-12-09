@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://faizshukri.github.io/sitemap.xml 
